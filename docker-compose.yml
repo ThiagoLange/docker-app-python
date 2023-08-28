@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  python-app:
+    image: thiagolange/conversao-distancia:latest
+    build:
+      context: ./conversao-distancia
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
